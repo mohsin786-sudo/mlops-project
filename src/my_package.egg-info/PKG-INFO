@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: my_package
+Version: 0.0.1
+Author: Mohsin
+Author-email: kazimohsin778@gmail.com
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+Requires-Dist: flask
+Dynamic: author
+Dynamic: author-email
+Dynamic: requires-dist
