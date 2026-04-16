@@ -1,9 +1,15 @@
-from src.pipeline.predict_pipeline import PredictPipeline
+from flask import Flask
+import pickle
+
+app = Flask(__name__)
+
+@app.route('/')
+def home():
+    return "MLOps Project Running 🚀"
+
+@app.route('/predict')
+def predict():
+    return "Prediction: [0]"
 
 if __name__ == "__main__":
-    data = [[2, 6]]
-
-    pipeline = PredictPipeline()
-    result = pipeline.predict(data)
-
-    print("Prediction:", result)
+    app.run(host="0.0.0.0", port=5000)
